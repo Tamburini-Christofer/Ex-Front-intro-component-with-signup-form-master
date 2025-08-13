@@ -16,7 +16,7 @@ body{
 h1{
     line-height: 43px;
     margin-bottom: 20px;
-    font-size: 44px;
+    font-size: 50px;
     font-weight:900;
     color: white;
 }
@@ -29,12 +29,19 @@ p{
     color: white;
 }
 
-.text_red{
+a{
+    cursor: pointer;
+    text-decoration: none;
     color: hsl(0, 100%, 74%) ;
 }
 
 .text_small{
+    color: grey;
     font-size: 10px;
+}
+
+.text_red{
+    color: rgb(255, 0, 0);
 }
 
 .shadow{
@@ -48,8 +55,7 @@ p{
 .wrapper{
     display: flex;
     
-    width: 70vw;
-    height: 80vh;
+    width: 75vw;
     margin: 10vh auto;
     /*DEBUG*/
     /*background-color: bisque;*/
@@ -88,10 +94,14 @@ button{
     background-color: hsl(154, 59%, 51%);
 }
 
+.claim_bt:active .error{
+    display: inline;
+}
+
 input{
     font-size: 12px;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 7px 0;
     padding: 10px 30px;
     border: 1px solid hsl(249, 10%, 26%);
     border-radius: 5px;
@@ -99,14 +109,45 @@ input{
     height: 45px;
 }
 
+input:hover{ 
+    outline: 1.5px solid hsl(0, 0%, 0%);
+}   
+
+input:invalid{
+  background-image: url(../img/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 95%;
+  align-items: center;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
+input:invalid .error{
+    display: block;
+}
+
+.error{
+    display: none;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: end;
+}
+
+.input:required .error{
+    display: inline;
+}
+
 .input_card{
     display: flex;
     flex-direction: column;
 
-    padding: 40px;
+    padding: 20px 30px;
     margin-top: 20px;
     height: 400px;
     border-radius: 10px;
     background-color: white;
     width: 100%;
 }
+
