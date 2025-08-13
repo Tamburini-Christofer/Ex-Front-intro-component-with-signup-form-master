@@ -13,6 +13,8 @@ body{
     font-family: "Roboto", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Titoli*/
+
 h1{
     line-height: 43px;
     margin-bottom: 20px;
@@ -25,14 +27,16 @@ p{
     color: white;
 }
 
-.text_white{
-    color: white;
-}
+/*Text color*/
 
 a{
     cursor: pointer;
     text-decoration: none;
     color: hsl(0, 100%, 74%) ;
+}
+
+.text_white{
+    color: white;
 }
 
 .text_small{
@@ -44,13 +48,13 @@ a{
     color: rgb(255, 0, 0);
 }
 
+/*Shadow*/
+
 .shadow{
     box-shadow: 0px 7px 0 rgba(0, 0, 0, 0.159);
 }
 
-.input_card div{
-    text-align: center;
-}
+/*Wrapper*/
 
 .wrapper{
     display: flex;
@@ -77,6 +81,8 @@ a{
     width: 50%;
 }
 
+/*Button*/
+
 button{
     box-shadow: 0 0 10px 10px;
     cursor: pointer;
@@ -99,6 +105,8 @@ button{
     display: inline;
 }
 
+/*Input*/
+
 input{
     font-size: 12px;
     font-weight: 500;
@@ -108,6 +116,10 @@ input{
     border-radius: 5px;
     width: 100%;
     height: 45px;
+}
+
+.input_card div{
+    text-align: center;
 }
 
 input:hover{ 
@@ -196,10 +208,6 @@ input:invalid .error{
     h1{
     font-size: 34px;
 }
-
-
-    
-
 
 }
 
